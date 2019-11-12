@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    <div class="heading">
+        <a class="title2" href="{% url 'model_form_upload' %}">
+            <img src="{% static "images/essers-logo.png" %}" alt="Essers">
+        </a>
+    </div>
+    <hr class="mt-0 mb-4">
+
+    <p>Uploaded files:</p>
+    <ul>
+        {% for obj in documents %}
+            <li>
+                <a href="{{ obj.document.url }}">{{ obj.document.name }}</a>
+                <small>(Uploaded at: {{ obj.uploaded_at }})</small>
+            </li>
+        {% endfor %}
+    </ul>
+
+{% endblock %}

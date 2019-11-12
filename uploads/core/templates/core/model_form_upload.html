@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    <div class="heading title2">
+        <img src="{% static "images/essers-logo.png" %}" alt="Essers">
+    </div>
+    <div class="heading">
+        <p>Please select the punch data file to process:</p>
+        <form method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button class="upload" type="submit">Upload</button>
+        </form>
+    </div>
+{% endblock %}

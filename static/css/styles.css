@@ -1,0 +1,100 @@
+body, html {
+    height: 100%;
+    background-image: url("/static/images/background.png");
+    background-position: center;
+    background-size: cover;
+
+}
+
+.logo {
+    position: relative;
+    background-color: #FFFFFF;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: 0;
+    padding: 20px;
+    vertical-align: bottom;
+}
+
+.heading {
+    width: 400px;
+    height: 300px;
+    margin: auto;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    padding: 30px;
+}
+
+.buttons {
+    width: 600px;
+    height: 300px;
+    margin: auto;
+    position: relative;
+}
+
+.title1 {
+    display: block;
+    text-align: center;
+    color: #FDC300;
+    font-size: 48pt;
+    font-weight: bold;
+    font-family: "Roboto", "Lucida Grande", sans-serif;
+}
+
+.title2 {
+    display: block;
+    margin-top: 15px;
+    text-align: center;
+    color: #FDC300;
+    font-size: 14pt;
+    font-family: sans-serif;
+}
+
+a {
+    display: block;
+    margin-top: 15px;
+    text-align: left;
+    color: #FDC300;
+    font-size: 12pt;
+    font-family: sans-serif;
+}
+
+small {
+    color: #FDC300;
+    font-size: 8pt;
+    font-family: sans-serif;
+}
+
+p {
+    color: #FDC300;
+    font-size: 12pt;
+    font-family: sans-serif;
+}
+
+.upload {
+    margin: 50px auto;
+    display: block;
+    width: 180px;
+    height: 50px;
+    border: 3px solid #846A01;
+    background-color: rgba(253, 195, 0, 0);
+    color: #FDC300;
+    font-family: sans-serif;
+    font-weight: bold;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    transition: background-color 1000ms, color 1000ms;
+}
+
+.upload:hover {
+    background-color: rgba(253, 195, 0, 1);
+    color: #222;
+    cursor: pointer;
+    transition: background-color 1000ms, color 1000ms;
+}

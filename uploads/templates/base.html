@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+{% load static %}
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static "css/styles.css" %}">
+    <link rel="shortcut icon" type="image/png" href="{% static 'images/favicon.png' %}"/>
+    <title>ASAP XL Automation</title>
+</head>
+
+<body>
+
+<div class="row justify-content-left logo ">
+    <a href="https://asap.be" target="_blank">
+        <img src="{% static "images/logo20.png" %}" alt="logo" title="ASAP Website">
+    </a>
+    <a class="justify-content-right" href="/">
+        <img src="{% static "images/homey.png" %}" alt="logo" title="Home" height="40px" width="60px">
+
+    </a>
+</div>
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-8">
+            {% block content %}
+            {% endblock %}
+        </div>
+    </div>
+</div>
+</body>
+</html>
